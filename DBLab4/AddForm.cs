@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace DBLab4
 {
-    public partial class MainForm : Form
+    public partial class AddForm : Form
     {
-        public MainForm()
+        public AddForm()
         {
             InitializeComponent();
         }
 
-        private void addButton_Click(object sender, EventArgs e)
+        private void closeButton_Click(object sender, EventArgs e)
         {
-            new AddForm().ShowDialog();
+            Close();
         }
     }
 }
