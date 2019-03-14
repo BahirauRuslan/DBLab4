@@ -44,6 +44,7 @@
             this.addRecordButton.TabIndex = 0;
             this.addRecordButton.Text = "Добавить";
             this.addRecordButton.UseVisualStyleBackColor = true;
+            this.addRecordButton.Click += new System.EventHandler(this.addRecordButton_Click);
             // 
             // closeButton
             // 
@@ -74,12 +75,8 @@
             // 
             // comboGroupBox
             // 
+            this.comboGroupBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboGroupBox.FormattingEnabled = true;
-            this.comboGroupBox.Items.AddRange(new object[] {
-            "123456",
-            "3453235",
-            "523325",
-            "264646"});
             this.comboGroupBox.Location = new System.Drawing.Point(111, 41);
             this.comboGroupBox.Name = "comboGroupBox";
             this.comboGroupBox.Size = new System.Drawing.Size(121, 21);

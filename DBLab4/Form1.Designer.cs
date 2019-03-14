@@ -208,13 +208,13 @@
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Label countLabel;
         private System.Windows.Forms.Label countInputLabel;
-        private System.Windows.Forms.Label addedInputLabel;
-        private System.Windows.Forms.Label addedLabel;
-        private System.Windows.Forms.Label idLabel;
-        private System.Windows.Forms.Label idInputLabel;
         private System.Windows.Forms.DataGridView mainGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentName;
         private System.Windows.Forms.DataGridViewTextBoxColumn GroupNumber;
+        public System.Windows.Forms.Label addedInputLabel;
+        public System.Windows.Forms.Label addedLabel;
+        public System.Windows.Forms.Label idLabel;
+        public System.Windows.Forms.Label idInputLabel;
     }
 }
 

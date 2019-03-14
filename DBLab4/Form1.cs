@@ -19,11 +19,14 @@ namespace DBLab4
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            new AddForm().ShowDialog();
-            readButton_Click(this, null);
-            if (countLabel.Visible)
+            DialogResult result = new AddForm(this).ShowDialog();
+            if (result == DialogResult.OK)
             {
-                countButton_Click(this, null);
+                readButton_Click(this, null);
+                if (countLabel.Visible)
+                {
+                    countButton_Click(this, null);
+                }
             }
         }
 

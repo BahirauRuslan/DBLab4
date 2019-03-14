@@ -8,7 +8,12 @@ namespace DBLab4
 {
     class Group
     {
-        int Id { get; set; }
-        int Number { get; set; }
+        public int Id { get; set; }
+        public int Number { get; set; }
+
+        public override string ToString()
+        {
+            return Number.ToString();
+        }
     }
 }
