@@ -62,6 +62,7 @@
             this.readButton.TabIndex = 2;
             this.readButton.Text = "Читать";
             this.readButton.UseVisualStyleBackColor = true;
+            this.readButton.Click += new System.EventHandler(this.readButton_Click);
             // 
             // clearButton
             // 
@@ -71,6 +72,7 @@
             this.clearButton.TabIndex = 3;
             this.clearButton.Text = "Очистить";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // countButton
             // 

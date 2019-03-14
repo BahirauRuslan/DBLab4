@@ -8,5 +8,7 @@ namespace DBLab4
 {
     class Group
     {
+        int Id { get; set; }
+        int Number { get; set; }
     }
 }

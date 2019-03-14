@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace DBLab4
 {
-    class Student
+    class StudentGroupRecord
     {
+        public string FullName { get; set; }
+        public string Group { get; set; }
     }
 }
