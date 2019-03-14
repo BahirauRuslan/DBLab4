@@ -56,7 +56,7 @@
             // 
             // readButton
             // 
-            this.readButton.Location = new System.Drawing.Point(235, 9);
+            this.readButton.Location = new System.Drawing.Point(263, 25);
             this.readButton.Name = "readButton";
             this.readButton.Size = new System.Drawing.Size(75, 23);
             this.readButton.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(235, 38);
+            this.clearButton.Location = new System.Drawing.Point(263, 54);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(75, 23);
             this.clearButton.TabIndex = 3;
@@ -76,16 +76,17 @@
             // 
             // countButton
             // 
-            this.countButton.Location = new System.Drawing.Point(235, 71);
+            this.countButton.Location = new System.Drawing.Point(263, 187);
             this.countButton.Name = "countButton";
             this.countButton.Size = new System.Drawing.Size(75, 23);
             this.countButton.TabIndex = 4;
             this.countButton.Text = "Всего";
             this.countButton.UseVisualStyleBackColor = true;
+            this.countButton.Click += new System.EventHandler(this.countButton_Click);
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(235, 100);
+            this.addButton.Location = new System.Drawing.Point(263, 216);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
             this.addButton.TabIndex = 5;
@@ -96,16 +97,17 @@
             // countLabel
             // 
             this.countLabel.AutoSize = true;
-            this.countLabel.Location = new System.Drawing.Point(12, 130);
+            this.countLabel.Location = new System.Drawing.Point(12, 242);
             this.countLabel.Name = "countLabel";
             this.countLabel.Size = new System.Drawing.Size(131, 13);
             this.countLabel.TabIndex = 6;
             this.countLabel.Text = "Общее число студентов:";
+            this.countLabel.Visible = false;
             // 
             // countInputLabel
             // 
             this.countInputLabel.AutoSize = true;
-            this.countInputLabel.Location = new System.Drawing.Point(149, 130);
+            this.countInputLabel.Location = new System.Drawing.Point(149, 242);
             this.countInputLabel.Name = "countInputLabel";
             this.countInputLabel.Size = new System.Drawing.Size(0, 13);
             this.countInputLabel.TabIndex = 7;
@@ -113,7 +115,7 @@
             // addedInputLabel
             // 
             this.addedInputLabel.AutoSize = true;
-            this.addedInputLabel.Location = new System.Drawing.Point(130, 152);
+            this.addedInputLabel.Location = new System.Drawing.Point(130, 264);
             this.addedInputLabel.Name = "addedInputLabel";
             this.addedInputLabel.Size = new System.Drawing.Size(0, 13);
             this.addedInputLabel.TabIndex = 9;
@@ -121,25 +123,27 @@
             // addedLabel
             // 
             this.addedLabel.AutoSize = true;
-            this.addedLabel.Location = new System.Drawing.Point(12, 152);
+            this.addedLabel.Location = new System.Drawing.Point(12, 264);
             this.addedLabel.Name = "addedLabel";
             this.addedLabel.Size = new System.Drawing.Size(112, 13);
             this.addedLabel.TabIndex = 8;
             this.addedLabel.Text = "Добавлено записей:";
+            this.addedLabel.Visible = false;
             // 
             // idLabel
             // 
             this.idLabel.AutoSize = true;
-            this.idLabel.Location = new System.Drawing.Point(12, 176);
+            this.idLabel.Location = new System.Drawing.Point(12, 288);
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(158, 13);
             this.idLabel.TabIndex = 10;
             this.idLabel.Text = "Новому студенту присвоен id:";
+            this.idLabel.Visible = false;
             // 
             // idInputLabel
             // 
             this.idInputLabel.AutoSize = true;
-            this.idInputLabel.Location = new System.Drawing.Point(176, 176);
+            this.idInputLabel.Location = new System.Drawing.Point(176, 288);
             this.idInputLabel.Name = "idInputLabel";
             this.idInputLabel.Size = new System.Drawing.Size(0, 13);
             this.idInputLabel.TabIndex = 11;
@@ -156,7 +160,7 @@
             this.mainGridView.ReadOnly = true;
             this.mainGridView.RowHeadersVisible = false;
             this.mainGridView.RowHeadersWidth = 21;
-            this.mainGridView.Size = new System.Drawing.Size(214, 98);
+            this.mainGridView.Size = new System.Drawing.Size(242, 214);
             this.mainGridView.TabIndex = 12;
             // 
             // StudentName
@@ -175,7 +179,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(322, 212);
+            this.ClientSize = new System.Drawing.Size(350, 322);
             this.Controls.Add(this.mainGridView);
             this.Controls.Add(this.idInputLabel);
             this.Controls.Add(this.idLabel);

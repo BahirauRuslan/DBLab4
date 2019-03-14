@@ -43,5 +43,16 @@ Initial Catalog=EducationalDepartment;Integrated Security=True";
             connection.Close();
             return records;
         }
+
+        public int GetCount()
+        {
+            int count = 0;
+            SqlConnection connection = new SqlConnection(CONNECTION_STRING);
+            SqlCommand command = new SqlCommand("SELECT COUNT(*) FROM Students", connection);
+            connection.Open();
+            count = (int)command.ExecuteScalar();
+            connection.Close();
+            return count;
+        }
     }
 }

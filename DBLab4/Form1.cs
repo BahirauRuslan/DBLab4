@@ -20,6 +20,11 @@ namespace DBLab4
         private void addButton_Click(object sender, EventArgs e)
         {
             new AddForm().ShowDialog();
+            readButton_Click(this, null);
+            if (countLabel.Visible)
+            {
+                countButton_Click(this, null);
+            }
         }
 
         private void readButton_Click(object sender, EventArgs e)
@@ -30,7 +35,14 @@ namespace DBLab4
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-            ;
+            mainGridView.Rows.Clear();
+            mainGridView.RowCount = 1;
+            addedLabel.Visible = false;
+            countLabel.Visible = false;
+            idLabel.Visible = false;
+            addedInputLabel.Text = "";
+            countInputLabel.Text = "";
+            idInputLabel.Text = "";
         }
 
         private void FillTable(IEnumerable<StudentGroupRecord> records)
@@ -42,6 +54,12 @@ namespace DBLab4
                 mainGridView[0, i].Value = record.FullName;
                 mainGridView[1, i++].Value = record.Group;
             }
+        }
+
+        private void countButton_Click(object sender, EventArgs e)
+        {
+            countInputLabel.Text = DBStudents.GetInstance().GetCount().ToString();
+            countLabel.Visible = true;
         }
     }
 }
